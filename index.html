@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body class="bg-light">
+  <div class="container-fluid position-sticky top-0 bg-light" style="z-index: 3;">
+ <div class="container-fluid container-md">
+  <div class="header">
+      <div class="top-menue d-flex justify-content-between">
+          <div class="rightSide d-flex justify-content-start align-items-center">
+              
+              <div class="calender ms-3 d-none d-md-inline-flex align-items-center">
+                  <i style="font-size:12px" class="fa">&#xf073;</i>
+                  <p class="mb-0 ms-2"> شنبه 6 بهمن 1403</p>
+              </div>
+              <div class="time ms-3  align-items-center d-none d-md-inline-flex">
+                  <i style="font-size:14px" class="fa">&#xf017;</i>
+                  <p class="mb-0 ms-2">11 : 11 : 11</p>
+              </div>
+              <div class="dropdown ms-3">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-user"><a href="loginForm" class="text-light"> ورود و عضویت</a></i> 
+                </button>
+                <form class="dropdown-menu p-4">
+                  <div class="mb-3">
+                    <!-- <label for="exampleDropdownFormEmail2" class="form-label">ایمیل</label> -->
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="ایمیل خود را وارد کنید">
+                  </div>
+                  <div class="mb-3">
+                    <!-- <label for="exampleDropdownFormPassword2" class="form-label">پسورد</label> -->
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="رمز خود را وارد نمایید">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                      <label class="form-check-label" for="dropdownCheck2">
+                       مرا بخاطر بسپار
+                      </label>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center g-2">
+                    <button type="submit" class="btn">ورود</button>
+                    <button type="submit" class="btn btn-danger">عضویت</button>
+                 </div>
+                </form>
+              </div> 
+          </div>
+          <div class="leftSide">
+            <ul class="d-md-none d-xl-flex mb-0 ms-3">
+              <li><i class="fas fa-coins"></i>قیمت طلا و سکه</li>
+              <li><i class="fas fa-burn"></i>نفت و سوخت</li>
+              <li><i class="fas fa-database"></i>فلزات پایه</li>
+              <li><i class="fas fa-globe-asia"></i>کالاهای جهانی</li>
+              <li><i class="fas fa-globe"></i>بورس جهانی</li>
+              <li><i class="fas fa-archive"></i>آرشیو</li>
+            </ul>
+            <div class="searchBar d-none d-md-flex">
+              <input class="bg-light" type="search" name="" id="" placeholder="جستجو ...">
+              <i class="fa fa-search text-danger"></i>
+            </div>
+          </div>
+      </div>
+  </div>
+</div> 
+<div class="navbarcontainer container-fluid">
+<div class="container-fluid container-lg d-flex justify-content-between align-items-center">
+  <nav class="navbar order-1 order-lg-2 navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-logo me-auto"><img src="images/logo.png" alt=""></div>
+    <div class="collapse navbar-collapse d-flex align-items-center justify-content-start" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             اخبار و رویدادها
+          </a>
+          <ul class="dropdown-menu sub-menu-container w-100">
+            <div class="row container">
+              <div class="col-lg-4 list-item g-1" id="list-item">
+                <h6>دسته بندی عمومی</h6>
+                <ul>
+                  <li><a class="dropdown-item" href="">عناوین کل سرویس</a></li>
+                  <li><a class="dropdown-item" href="">سیاست</a></li>
+                  <li><a class="dropdown-item" href="">فرهنگ</a></li>
+                  <li><a class="dropdown-item" href="">ورزش</a></li>
+                  <li><a class="dropdown-item" href="">جامعه</a></li>
+                  <li><a class="dropdown-item" href="">فناوری</a></li>
+                  <li><a class="dropdown-item" href="">سلامت</a></li>
+                  <li><a class="dropdown-item" href="">استانها</a></li>
+                  <li><a class="dropdown-item" href="">گفتگو</a></li>
+                  <li><a class="dropdown-item" href="">یادداشت</a></li>
+                  <li><a class="dropdown-item" href="">توییت</a></li>
+                  <li><a class="dropdown-item" href="">اینستاگرام</a></li>
+                  <li><a class="dropdown-item" href="">پژوهش</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 list-item g-1" id="list-item2">
+                <h6>دسته بندی اقتصادی</h6>
+                <ul>
+                  <li><a class="dropdown-item" href="">عناوین کل سرویس</a></li>
+                  <li><a class="dropdown-item" href="">جهان</a></li>
+                  <li><a class="dropdown-item" href="">اکو | ECO</a></li>
+                  <li><a class="dropdown-item" href="">کلان و بودجه</a></li>
+                  <li><a class="dropdown-item" href="">بانک</a></li>
+                  <li><a class="dropdown-item" href="">بیمه</a></li>
+                  <li><a class="dropdown-item" href="">کارگزاری های برتر</a></li>
+                  <li><a class="dropdown-item" href="">نفت و گاز</a></li>
+                  <li><a class="dropdown-item" href="">پتروشیمی</a></li>
+                  <li><a class="dropdown-item" href="">صنعت آب و برق</a></li>
+                  <li><a class="dropdown-item" href="">صنایع و معادن</a></li>
+                  <li><a class="dropdown-item" href="">تجارت و بازرگانی</a></li>
+                  <li><a class="dropdown-item" href="">کار و تمدن</a></li>
+                  <li><a class="dropdown-item" href="">اقتصاد شهری</a></li>
+                  <li><a class="dropdown-item" href="">اقتصاد دیجیتالی</a></li>
+                  <li><a class="dropdown-item" href="">کشاورزی و دامپروری</a></li>
+                  <li><a class="dropdown-item" href="">اخبار شرکت ها</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 list-item g-1" id="list-item3">
+                <h6>دسته بندی ویژه</h6>
+                  <ul>
+                    <li><a class="dropdown-item" href="">عناوین کل سرویس</a></li>
+                    <li><a class="dropdown-item" href="">بازار سرمایه</a></li>
+                    <li><a class="dropdown-item" href="">چهره های شاخص</a></li>
+                    <li><a class="dropdown-item" href="">اقتصاد دانش بنیان</a></li>
+                    <li><a class="dropdown-item" href="">اقتصاد فرهنگ و هنر</a></li>
+                    <li><a class="dropdown-item" href="">اقتصاد ورزش</a></li>
+                    <li><a class="dropdown-item" href="">خودرو</a></li>
+                    <li><a class="dropdown-item" href="">راه و شهرسازی</a></li>
+                    <li><a class="dropdown-item" href="">اقتصاد سبز</a></li>
+                    <li><a class="dropdown-item" href="">توریست و گردشگری</a></li>
+                    <li><a class="dropdown-item" href="">سبک زندگی</a></li>
+                    <li><a class="dropdown-item" href="">راهنمای بازار</a></li>
+                    <li><a class="dropdown-item" href="">اقتصاد سلامت</a></li>
+                  </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            نرخ ها و داده ها
+          </a>
+          <ul class="dropdown-menu sub-menu-container">
+              <div class="list-item container-fluid container-lg">
+                <ul class="price d-flex flex-wrap">
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> ارزها</a></li>
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> قیمت طلا و سکه</a></li>
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> نفت و سوخت</a></li>
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> فلزات پایه</a></li>
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> کالاهای جهانی</a></li>
+                  <li class="col-4 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> پایه های جهانی</a></li>
+                </ul>
+              </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            استان ها
+          </a>
+          <ul class="dropdown-menu">
+            <div class="list-item container-fluid container-lg">
+              <ul class="city p-3 d-flex flex-wrap">
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> آذربایجان شرقی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> آذربایجان غربی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> اردبیل</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> اصفهان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> البرز</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> ایلام</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> بوشهر</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> تهران</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> چهارمحال و بختیاری</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> خراسان جنوبی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> خراسان رضوی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> خراسان شمالی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> خوزستان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> زنجان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> سمنان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> سیستان و بلوچستان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> فارس</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> قزوین</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> قم</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> کردستان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> کرمان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> کرمانشاه</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> کهگیلویه و بویراحمد</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> گلستان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> گیلان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> لرستان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> مازندران</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> مرکزی</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> هرمزگان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> همدان</a></li>
+                <li class="col-6 col-md-2"><a class="dropdown-item px-2" href=""><i class='fas fa-angle-left text-danger'></i> یزد</a></li>
+              </ul>
+            </div>
+        </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            مناطق آزاد
+          </a>
+          <ul class="dropdown-menu">
+            <div class="list-item container-fluid container-lg">
+              <ul class="free-zone">
+                <li class=""><img src="images/maku.png" alt="ماکو"></li>
+                <li class=""><img src="images/kish.png" alt="کیش"></li>
+                <li class=""><img src="images/qeshm.png" alt="قشم"></li>
+                <li class=""><img src="images/chabahar.png" alt="چابهار"></li>
+                <li class=""><img src="images/anzali.png" alt="انزلی"></li>
+                <li class=""><img src="images/arvand.png" alt="اروند"></li>
+                <li class=""><img src="images/aras.png" alt="ارس"></li>
+              </ul>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            چند رسانه ای
+          </a>
+          <ul class="dropdown-menu sub-menu-container">
+            <div class="list-item container-fluid container-lg">
+              <ul class="social-media d-flex flex-wrap">
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> فیلم</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> صوت</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> کلیپ</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> تیزر</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> عکس</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> اینفوگرافی</a></li>
+                <li class=""><a class="dropdown-item" href=""><i class='fas fa-angle-left text-danger'></i> کاریکاتور</a></li>
+              </ul>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            نیازمندی ها
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="kh order-3">
+    <img src="images/m-noroz-1710929559.jpg" alt="">
+  </div>
+</div>
+</div>
+    <div class="sub-header">
+      <div class="container-fluid position-relative">
+        <div class="tabs container-fluid container-md d-flex justify-content-center align-items-center">
+          <div onclick="scrollWin(100, 0)" class="right-arrow">
+            <span class="fa fa-chevron-right"></span>
+          </div>
+          <div class="tab-menu">
+            <ul class="">
+              <li><a class="text-danger" href=""><i class="fa fa-bars"></i></a></li>
+              <li><a href="">اوراسیا | EAEU</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                    <ul class="d-flex flex-wrap  container">
+                      <li class="col-6 col-md-3"><a href=""><i class="fa fa-home"></i> صفحه اصلی اورسیا | EAEU</a></li>
+                      <li class="col-6 col-md-3"><a href=""> ایران و روسیه</a></li>
+                      <li class="col-6 col-md-3"><a href=""> ارمنستان و بلاروس</a></li>
+                      <li class="col-6 col-md-3"><a href=""> قزاقستان و قرقیزستان</a></li>
+                      <li class="col-6 col-md-3"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#483d8b'"onmouseout="this.style.backgroundColor=''" href="">جهان</a></li>
+              <li><a href="">اکو | ECO</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                  <ul class="d-flex flex-wrap  container eco">
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-home"></i> صفحه اصلی اکو | ECO</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/iran-log-1-1699529252.png" alt=""> ایران | ECO IRAN</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/turk-log-1699528084.png" alt=""> ترکیه |Turkiye</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/azar-log-1699529273.png" alt=""> آذربایجان | Azerbaijan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/turkaman-log-1699529290.png" alt=""> ترکمنستان | Turkmenistan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/tajikestan-1699529979.png" alt=""> تاجیکستان |Tajikestan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/gazag-log-1699529436.png" alt=""> قزاقستان | Kazakhstan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/girgiz-log-1699529461.png" alt=""> قرقیزستان | Kyrgystan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/uzbakestan-1699529925.png" alt=""> ازبکستان | Uzbekistan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/afghan-log-1699529504.png" alt=""> افغانستان | Afghanestan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/countries/pakistan-log-1699529529.png" alt=""> پاکستان | Pakistan</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#dc143c'"onmouseout="this.style.backgroundColor=''" href="">کلان و بودجه</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#483d8b'"onmouseout="this.style.backgroundColor=''" href="">بانک</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                  <ul class="d-flex flex-wrap container" id="banks">
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-home"></i> صفحه اصلی سایت</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/bn-mrz.jpg" alt=""> بانک مرکزی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/meli.jpg" alt=""> بانک ملی ایران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/melat.jpg" alt=""> بانک ملت</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/tejarat.jpg" alt=""> بانک تجارت</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/saderat.jpg" alt=""> بانک صادرات ایران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/iran-zamin.jpg" alt=""> بانک ایران زمین</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/pasargad.jpg" alt=""> بانک پاسارگاد</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/ayndeh.jpg" alt=""> بانک آینده</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/parsian.jpg" alt=""> بانک پارسیان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/eghtesad.jpg" alt=""> بانک اقتصاد نوین</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/dey.jpg" alt=""> بانک دی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/khavar.jpg" alt=""> بانک خاورمیانه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/saman.jpg" alt=""> بانک سامان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/sina.jpg" alt=""> بانک سینا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/sarmaye.jpg" alt=""> بانک سرمایه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/kar-afrin.jpg" alt=""> بانک کارآفرین</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/gardesh.jpg" alt=""> بانک گردشگری</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/resalat.jpg" alt=""> بانک رسالت</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/toseE.jpg" alt=""> بانک توسعه تعاون</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/toseE-saderat.jpg" alt=""> بانک توسعه صادرات ایران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/mehr.png" alt=""> قرض الحسنه مهر ایران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/sanat.jpg" alt=""> بانک صنعت و معدن</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/sepah.jpg" alt=""> بانک سپه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/maskan.jpg" alt=""> بانک مسکن</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/keshavarzi.png" alt=""> بانک کشاورزی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/refah.jpg" alt=""> بانک رفاه کارگران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/post-bank.jpg" alt=""> پست بانک</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/moshtarak.jpg" alt=""> بانک مشترک ایران و ونزوئلا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/shahr.png" alt=""> بانک شهر</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/sandogh-toseE-meli.jpg" alt=""> صندوق توسعه ملی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/melal.jpg" alt=""> موسسه ملل</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/banks/amoozesh-bankdari.png" alt=""> موسسه آموزش بانکداری</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#0099cc'"onmouseout="this.style.backgroundColor=''" href="">بیمه</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                  <ul class="d-flex flex-wrap  container" id="insurances">
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-home"></i> صفحه اصلی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/mrkzi.jpg" alt=""> بیمه مرکزی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/toseE.jpg" alt=""> بیمه توسعه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/tejart-no.jpg" alt=""> بیمه تجارت نو</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/azki.jpg" alt=""> بیمه ازکی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/iran.jpg" alt=""> بیمه ایران</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/asia.jpg" alt=""> بیمه آسیا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/alborz.jpg" alt=""> بیمه البرز</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/dana.jpg" alt=""> بیمه دانا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/moalem.jpg" alt=""> بیمه معلم</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/parsian.jpg" alt=""> بیمه پارسیان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/sina.jpg" alt=""> بیمه سینا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/razi.jpg" alt=""> بیمه رازی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/saman.jpg" alt=""> بیمه سامان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/dey.jpg" alt=""> بیمه دی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/melat.jpg" alt=""> بیمه ملت</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/novin.jpg" alt=""> بیمه نوین</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/pasargad.jpg" alt=""> بیمه پاسارگاد</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/kosar.jpg" alt="">بیمه کوثر</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/ma.jpg" alt=""> بیمه ما</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/arman.jpg" alt=""> بیمه آرمان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/taAwon.jpg" alt=""> بیمه تعاون</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/sarmad.jpg" alt=""> بیمه سرمد</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/eteka.jpg" alt=""> بیمه اتکایی ایرانیان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img style="width: 18px; height: 18px;" src="images/insurance/eteka-amin.png" alt=""> بیمه اتکایی امین</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img style="width: 18px; height: 18px;" src="images/insurance/hafez.png" alt=""> بیمه حافظ</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/omid.jpg" alt=""> بیمه امید</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/iran-mihan.jpg" alt=""> بیمه ایران میهن</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/kish.jpg" alt=""> بیمه متقابل کیش</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/asmari.jpg" alt=""> بیمه آسماری</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/hekmat.jpg" alt=""> بیمه حکمت صبا</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/insurance/khavar.jpg" alt=""> بیمه زندگی خاورمیانه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#08bf11'"onmouseout="this.style.backgroundColor=''" href="">کارگزاری های برتر</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                  <ul class="d-flex flex-wrap  container" id="brokers">
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-home"></i> صفحه اصلی کارگزاری های برتر</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/mofid.png" alt=""> کارگزاری مفید</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/farabi.png" alt=""> کارگزاری فارابی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/agah.png" alt=""> کارگزاری آگاه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/karizma.png" alt=""> کارگزاری کاریزما</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/mobin-sarmaye.png" alt=""> کارگزاری مبین سرمایه</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/pasragad.png" alt=""> کارگزاری پاسارگاد</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/hafez.png" alt=""> کارگزاری حافظ</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/eghtesad-bidar.png" alt=""> کارگزاری اقتصاد بیدار</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/nahayat.png" alt=""> کارگزاری نهایت نگر</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/parsian.png" alt=""> کارگزاری پارسیان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/brokers/shm-ashna.png" alt=""> کارگزاری </a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#336699'"onmouseout="this.style.backgroundColor=''" href="">نفت و گاز</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#cc00cc'"onmouseout="this.style.backgroundColor=''" href="">پتروشیمی</a>
+                <div class="tab-menu-categories container-fluid position-absolute">
+                  <ul class="d-flex flex-wrap  container" id="petrochemicals">
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-home"></i> صفحه اصلی پتروشیمی</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><img src="images/petrochemicals/khorasan.png" alt=""> پتروشیمی خراسان</a></li>
+                    <li class="col-6 col-md-3 col-lg-2"><a href=""><i class="fa fa-rss"></i> عناوین کل اخبار</a></li>
+                  </ul>
+              </div>
+              </li>
+              <li><a onmouseover="this.style.backgroundColor='#0066ff'"onmouseout="this.style.backgroundColor=''" href="">صنعت آب و برق</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#daa520'"onmouseout="this.style.backgroundColor=''" href="">صنایع و معادن</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#8b0000'"onmouseout="this.style.backgroundColor=''" href="">تجارت و بازرگانی</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#483d8b'"onmouseout="this.style.backgroundColor=''" href="">کار و تعاون</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#228b22'"onmouseout="this.style.backgroundColor=''" href="">اقتصاد شهری</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#1e90ff'"onmouseout="this.style.backgroundColor=''" href="">اقتصاد دیجیتال</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#228b22'"onmouseout="this.style.backgroundColor=''" href="">کشاوزی و دامپروری</a></li>
+              <li><a onmouseover="this.style.backgroundColor='#bb0000'"onmouseout="this.style.backgroundColor=''" href="">اخبار و شرکت ها</a></li>
+            </ul>
+          </div>
+          <div onclick="scrollWin(-100, 0)" class="left-arrow">
+            <span class="fa fa-chevron-left"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+   <section>
+    <div class="container-fluid container-md">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="slider-show row">
+              <div class="title-news d-flex flex-column col-12 col-md-9 col-lg-6">
+                <div class="title-news-header">
+                  <div class="swiper-container position-relative">
+                    <a href="" class="slider-title d-none d-md-flex">سرخط اخبار : </a>
+                    <div class="swiper-wrapper position-absolute">
+                      <div class="swiper-slide"><a href="">عهد دوباره مردم گرگان با آرمان های انقلاب اسلامی</a></div>
+                      <div class="swiper-slide"><a href="">روایتی از محل قرار رشتوندان برای جشن پیروزی انقلاب؛ برای ایران آمدیم</a></div>
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                      <div class="swiper-slide"><a href="">حضور باشکوه مردم در راهپیمایی ۲۲ بهمن یاس را به اردوگاه دشمن آورده است</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image-news-box ">
+                 <div class="image-news position-relative col-12 w-100">
+                  <a href="" class="position-absolute" id="title">ورزش</a>
+                  <img src="images/696803618222475.jpg" alt="" class="position-relative img-fluid">
+                  <h2>گندوز بهترین دروازه بان خارجی لیگ برتر فوتبال</h2>
+                </div>
+                <div class="top-news d-flex justify-content-between flex-wrap">
+                  <div class="first-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/720203119019667.jpg" alt="">
+                    <h2>طارمی عامل افت اینتر در فصل جاری سری آ</h2>
+                  </div>
+                  <div class="second-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/rabochee00-44-22-15still423-1739080701.jpg" alt="">
+                    <h2>دوچرخه سوار ایرانی به مورمانسک رسید </h2>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="new-news d-block col-12 d-md-none d-lg-block col-lg-3">
+                <div class="new-news-title" style="margin-bottom: 0.2rem;"><span><a href=""><i class="fa fa-bookmark" style="font-size: 16px;"></i> تازه های</a></span>
+                  <span><a href="" id="title"> ورزش</a></span>
+                </div>
+                <div class="section-title"> 
+                 <section>
+                    <ul>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان؛ ترکیب زردهای اصفهان مشخص شد</a></li>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان اعلام شد؛ ترکیب زردها مشخص شد</a></li>
+                      <li><a href="">رقابت ۲۷۵ تکواندوکار برای حضور در تیم ملی</a></li>
+                      <li><a href="">پسران «ابوموسی» فاتح لیگ کاراته وان</a></li>
+                      <li><a href="">آغاز رقابت های موی تای قهرمانی کشور در اراک و آستانه اشرفیه</a></li>
+                      <li><a href="">مشت محکم به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">سرپرست تیم بسکتبال البرز: به نتیجه‌ای کمتر از برد قانع نیستیم</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                      <li><a href="">مشت محکم فدراسیون به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">استاد بزرگ شطرنج ایران قهرمان مسابقات ازبکستان شد</a></li>
+                      <li><a href="">محدودیتی برای بیمه مشاغل ورزشی وجود ندارد</a></li>
+                      <li><a href="">بررسی دلایل مشکلات تیم ملی بوکس؛ راضی از مربی کوبایی، ناراضی از حمایت‌ها</a></li>
+                      <li><a href="">اردوی انتخابی زیر ۱۵ سال ورزش دانش‌آموزی در سمنان</a></li>
+                      <li><a href="">یخ‌زدگی مدال در سرمای «زیرصفر» اسکی ایران؛ ضعیف‌ترین نتایج رقم خورد</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="ads col-12 col-md-3">
+                <div class="site-ads d-none d-md-flex justify-content-between">
+                  <span class="text-secondary"><i class="fa fa-columns"></i> تبلیغات در سایت :</span>
+                  <span class="text-secondary">۸۸۹۳۰۲۷۰</span>
+                </div>
+                <div class="gift">
+                  <img src="images/300-x-300-tmn-gtmaa-1710579984.gif" class="w-100" alt="">
+                </div>
+                <div class="trend-news d-none d-md-block">
+                  <span><a href="" style="font-family: nassim-bold;"><i class="fa fa-fire"></i> موضوعات داغ :</a></span>
+                  <div class="tags">
+                    <ul class="tag-list d-flex flex-wrap">
+                      <li><a href="">پرسپولیس</a></li>
+                      <li><a href="">گل گهر</a></li>
+                      <li><a href="">استقلال</a></li>
+                      <li><a href="">کشتی فرنگی</a></li>
+                      <li><a href="">کارتال</a></li>
+                      <li><a href="">لیگ برتر</a></li>
+                      <li><a href="">گردشگری</a></li>
+                      <li><a href="">فلسطین</a></li>
+                      <li><a href="">چین</a></li>
+                      <li><a href="">معترضان</a></li>
+                      <li><a href="">اتحادیه جهانی کشتی</a></li>
+                      <li><a href="">بارسلونا</a></li>
+                      <li><a href="">لالیگا</a></li>
+                      <li><a href="">اقتصاد لالیگا</a></li>
+                      <li><a href="">یامال</a></li>
+                      <li><a href="">راموس</a></li>
+                      <li><a href="">مکزیک</a></li>
+                      <li><a href="">تیم ورزشی</a></li>
+                      <li><a href="">اقتصاد چین</a></li>
+                      <li><a href="">هاربین</a></li>
+                      <li><a href="">اسرائیل</a></li>
+                      <li><a href="">شمس آذر</a></li>
+                      <li><a href="">محمد خلیفه</a></li>
+                      <li><a href="">دوچرخه</a></li>
+                      <li><a href="">هلند</a></li>
+                      <li><a href="">ورزشکاران هلند</a></li>
+                      <li><a href="">بسکتبال</a></li>
+                      <li><a href="">اسپانیا</a></li>
+                      <li><a href="">حمل و نقل سبز</a></li>
+                      <li><a href="">ورزش هلند</a></li>
+                      <li><a href="">کشتی</a></li>
+                      <li><a href="">گرایی</a></li>
+                      <li><a href="">درویش</a></li>
+                      <li><a href="">داماش</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-show row">
+              <div class="title-news d-flex flex-column col-12 col-md-9 col-lg-6">
+                <div class="title-news-header">
+                  <div class="swiper-container position-relative">
+                    <a href="" class="slider-title d-none d-md-flex">سرخط اخبار : </a>
+                    <div class="swiper-wrapper position-absolute">
+                      <div class="swiper-slide"><a href="">عهد دوباره مردم گرگان با آرمان های انقلاب اسلامی</a></div>
+                      <div class="swiper-slide"><a href="">روایتی از محل قرار رشتوندان برای جشن پیروزی انقلاب؛ برای ایران آمدیم</a></div>
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                      <div class="swiper-slide"><a href="">حضور باشکوه مردم در راهپیمایی ۲۲ بهمن یاس را به اردوگاه دشمن آورده است</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image-news-box ">
+                 <div class="image-news position-relative col-12 w-100">
+                  <a href="" class="position-absolute" id="title">ورزش</a>
+                  <img src="images/696803618222475.jpg" alt="" class="position-relative img-fluid">
+                  <h2>گندوز بهترین دروازه بان خارجی لیگ برتر فوتبال</h2>
+                </div>
+                <div class="top-news d-flex justify-content-between flex-wrap">
+                  <div class="first-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/720203119019667.jpg" alt="">
+                    <h2>طارمی عامل افت اینتر در فصل جاری سری آ</h2>
+                  </div>
+                  <div class="second-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/rabochee00-44-22-15still423-1739080701.jpg" alt="">
+                    <h2>دوچرخه سوار ایرانی به مورمانسک رسید </h2>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="new-news d-block col-12 d-md-none d-lg-block col-lg-3">
+                <div class="new-news-title" style="margin-bottom: 0.2rem;"><span><a href=""><i class="fa fa-bookmark" style="font-size: 16px;"></i> تازه های</a></span>
+                  <span><a href="" id="title"> ورزش</a></span>
+                </div>
+                <div class="section-title"> 
+                 <section>
+                    <ul>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان؛ ترکیب زردهای اصفهان مشخص شد</a></li>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان اعلام شد؛ ترکیب زردها مشخص شد</a></li>
+                      <li><a href="">رقابت ۲۷۵ تکواندوکار برای حضور در تیم ملی</a></li>
+                      <li><a href="">پسران «ابوموسی» فاتح لیگ کاراته وان</a></li>
+                      <li><a href="">آغاز رقابت های موی تای قهرمانی کشور در اراک و آستانه اشرفیه</a></li>
+                      <li><a href="">مشت محکم به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">سرپرست تیم بسکتبال البرز: به نتیجه‌ای کمتر از برد قانع نیستیم</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                      <li><a href="">مشت محکم فدراسیون به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">استاد بزرگ شطرنج ایران قهرمان مسابقات ازبکستان شد</a></li>
+                      <li><a href="">محدودیتی برای بیمه مشاغل ورزشی وجود ندارد</a></li>
+                      <li><a href="">بررسی دلایل مشکلات تیم ملی بوکس؛ راضی از مربی کوبایی، ناراضی از حمایت‌ها</a></li>
+                      <li><a href="">اردوی انتخابی زیر ۱۵ سال ورزش دانش‌آموزی در سمنان</a></li>
+                      <li><a href="">یخ‌زدگی مدال در سرمای «زیرصفر» اسکی ایران؛ ضعیف‌ترین نتایج رقم خورد</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="ads col-12 col-md-3">
+                <div class="site-ads d-none d-md-flex justify-content-between">
+                  <span class="text-secondary"><i class="fa fa-columns"></i> تبلیغات در سایت :</span>
+                  <span class="text-secondary">۸۸۹۳۰۲۷۰</span>
+                </div>
+                <div class="gift">
+                  <img src="images/300-x-300-tmn-gtmaa-1710579984.gif" class="w-100" alt="">
+                </div>
+                <div class="trend-news d-none d-md-block">
+                  <span><a href="" style="font-family: nassim-bold;"><i class="fa fa-fire"></i> موضوعات داغ :</a></span>
+                  <div class="tags">
+                    <ul class="tag-list d-flex flex-wrap">
+                      <li><a href="">پرسپولیس</a></li>
+                      <li><a href="">گل گهر</a></li>
+                      <li><a href="">استقلال</a></li>
+                      <li><a href="">کشتی فرنگی</a></li>
+                      <li><a href="">کارتال</a></li>
+                      <li><a href="">لیگ برتر</a></li>
+                      <li><a href="">گردشگری</a></li>
+                      <li><a href="">فلسطین</a></li>
+                      <li><a href="">چین</a></li>
+                      <li><a href="">معترضان</a></li>
+                      <li><a href="">اتحادیه جهانی کشتی</a></li>
+                      <li><a href="">بارسلونا</a></li>
+                      <li><a href="">لالیگا</a></li>
+                      <li><a href="">اقتصاد لالیگا</a></li>
+                      <li><a href="">یامال</a></li>
+                      <li><a href="">راموس</a></li>
+                      <li><a href="">مکزیک</a></li>
+                      <li><a href="">تیم ورزشی</a></li>
+                      <li><a href="">اقتصاد چین</a></li>
+                      <li><a href="">هاربین</a></li>
+                      <li><a href="">اسرائیل</a></li>
+                      <li><a href="">شمس آذر</a></li>
+                      <li><a href="">محمد خلیفه</a></li>
+                      <li><a href="">دوچرخه</a></li>
+                      <li><a href="">هلند</a></li>
+                      <li><a href="">ورزشکاران هلند</a></li>
+                      <li><a href="">بسکتبال</a></li>
+                      <li><a href="">اسپانیا</a></li>
+                      <li><a href="">حمل و نقل سبز</a></li>
+                      <li><a href="">ورزش هلند</a></li>
+                      <li><a href="">کشتی</a></li>
+                      <li><a href="">گرایی</a></li>
+                      <li><a href="">درویش</a></li>
+                      <li><a href="">داماش</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="slider-show row">
+              <div class="title-news d-flex flex-column col-12 col-md-9 col-lg-6">
+                <div class="title-news-header">
+                  <div class="swiper-container position-relative">
+                    <a href="" class="slider-title  d-none d-md-flex">سرخط اخبار : </a>
+                    <div class="swiper-wrapper position-absolute">
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                      <div class="swiper-slide"><a href="">عراقچی: پیشنهاد کوچاندن اجباری فلسطینیان ناقض همه موازین حقوق بین‌الملل است</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="image-news-box ">
+                 <div class="image-news position-relative col-12 w-100">
+                  <a href="" class="position-absolute" id="title">ورزش</a>
+                  <img src="images/696803618222475.jpg" alt="" class="position-relative img-fluid">
+                  <h2>گندوز بهترین دروازه بان خارجی لیگ برتر فوتبال</h2>
+                </div>
+                <div class="top-news d-flex justify-content-between flex-wrap">
+                  <div class="first-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/720203119019667.jpg" alt="">
+                    <h2>طارمی عامل افت اینتر در فصل جاری سری آ</h2>
+                  </div>
+                  <div class="second-news d-flex align-items-center col-12 col-md-6">
+                    <img src="images/rabochee00-44-22-15still423-1739080701.jpg" alt="">
+                    <h2>دوچرخه سوار ایرانی به مورمانسک رسید </h2>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="new-news d-block col-12 d-md-none d-lg-block col-lg-3 ">
+                <div class="new-news-title" style="margin-bottom: 0.2rem;"><span><a href=""><i class="fa fa-bookmark" style="font-size: 16px;"></i> تازه های</a></span>
+                  <span><a href="" id="title"> ورزش</a></span>
+                </div>
+                <div class="section-title"> 
+                 <section>
+                    <ul>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان؛ ترکیب زردهای اصفهان مشخص شد</a></li>
+                      <li><a href="">ترکیب پرسپولیس برای بازی با سپاهان اعلام شد؛ ترکیب زردها مشخص شد</a></li>
+                      <li><a href="">رقابت ۲۷۵ تکواندوکار برای حضور در تیم ملی</a></li>
+                      <li><a href="">پسران «ابوموسی» فاتح لیگ کاراته وان</a></li>
+                      <li><a href="">آغاز رقابت های موی تای قهرمانی کشور در اراک و آستانه اشرفیه</a></li>
+                      <li><a href="">مشت محکم به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">سرپرست تیم بسکتبال البرز: به نتیجه‌ای کمتر از برد قانع نیستیم</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                      <li><a href="">مشت محکم فدراسیون به صورت ملی‌پوشان؛ بوکس چگونه گوشه رینگ قرار گرفت؟</a></li>
+                      <li><a href="">استاد بزرگ شطرنج ایران قهرمان مسابقات ازبکستان شد</a></li>
+                      <li><a href="">محدودیتی برای بیمه مشاغل ورزشی وجود ندارد</a></li>
+                      <li><a href="">بررسی دلایل مشکلات تیم ملی بوکس؛ راضی از مربی کوبایی، ناراضی از حمایت‌ها</a></li>
+                      <li><a href="">اردوی انتخابی زیر ۱۵ سال ورزش دانش‌آموزی در سمنان</a></li>
+                      <li><a href="">یخ‌زدگی مدال در سرمای «زیرصفر» اسکی ایران؛ ضعیف‌ترین نتایج رقم خورد</a></li>
+                      <li><a href="">تشکیل شورای عالی فنی کمیته پارالمپیک با داورزنی و علی نژاد</a></li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+              <div class="ads col-12 col-md-3">
+                <div class="site-ads d-none d-md-flex justify-content-between">
+                  <span class="text-secondary"><i class="fa fa-columns"></i> تبلیغات در سایت :</span>
+                  <span class="text-secondary">۸۸۹۳۰۲۷۰</span>
+                </div>
+                <div class="gift">
+                  <img src="images/300-x-300-tmn-gtmaa-1710579984.gif" class="w-100" alt="">
+                </div>
+                <div class="trend-news d-none d-md-block">
+                  <span><a href="" style="font-family: nassim-bold;"><i class="fa fa-fire"></i> موضوعات داغ :</a></span>
+                  <div class="tags">
+                    <ul class="tag-list d-flex flex-wrap">
+                      <li><a href="">پرسپولیس</a></li>
+                      <li><a href="">گل گهر</a></li>
+                      <li><a href="">استقلال</a></li>
+                      <li><a href="">کشتی فرنگی</a></li>
+                      <li><a href="">کارتال</a></li>
+                      <li><a href="">لیگ برتر</a></li>
+                      <li><a href="">گردشگری</a></li>
+                      <li><a href="">فلسطین</a></li>
+                      <li><a href="">چین</a></li>
+                      <li><a href="">معترضان</a></li>
+                      <li><a href="">اتحادیه جهانی کشتی</a></li>
+                      <li><a href="">بارسلونا</a></li>
+                      <li><a href="">لالیگا</a></li>
+                      <li><a href="">اقتصاد لالیگا</a></li>
+                      <li><a href="">یامال</a></li>
+                      <li><a href="">راموس</a></li>
+                      <li><a href="">مکزیک</a></li>
+                      <li><a href="">تیم ورزشی</a></li>
+                      <li><a href="">اقتصاد چین</a></li>
+                      <li><a href="">هاربین</a></li>
+                      <li><a href="">اسرائیل</a></li>
+                      <li><a href="">شمس آذر</a></li>
+                      <li><a href="">محمد خلیفه</a></li>
+                      <li><a href="">دوچرخه</a></li>
+                      <li><a href="">هلند</a></li>
+                      <li><a href="">ورزشکاران هلند</a></li>
+                      <li><a href="">بسکتبال</a></li>
+                      <li><a href="">اسپانیا</a></li>
+                      <li><a href="">حمل و نقل سبز</a></li>
+                      <li><a href="">ورزش هلند</a></li>
+                      <li><a href="">کشتی</a></li>
+                      <li><a href="">گرایی</a></li>
+                      <li><a href="">درویش</a></li>
+                      <li><a href="">داماش</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                      <li><a href="">کریستیانو رونالدو</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev w-auto" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="fa fa-chevron-right text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next w-auto" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="fa fa-chevron-left text-danger" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="lable text-center">
+        <ul class="slider-title mt-5 list-unstyled d-flex flex-nowrap justify-content-start justify-content-md-center gap-3" style="overflow-x: auto;">
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>اقتصاد</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>سیاست</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>فرهنگ</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>فناوری</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>جامعه</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>ورزش</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>سلامت</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-container d-flex flex-column align-items-center">
+              <div class="line"></div>
+              <span>استان ها</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div class="parsian-bank container w-100 col-12 mt-4">
+    <img class="w-100" src="images/1920-192-noglow-converted-106948-1693155384.gif" alt="">
+  </div>
+  <section>
+    <div class="container-fluid container-md">
+      <div class="row">
+        <div class="col-12 col-md-9">
+          <div class="row">
+            <div class="gold-price col-4 mt-4">
+              <div class="gold-price-title d-flex justify-content-between align-items-end">
+                <span><h1><a href=""><i class="fa-regular fa-gem"></i> قیمت طلا و سکه</a></h1></span>
+                <button>اطلاعات بیشتر</button>
+              </div>
+              <div class="tab d-flex justify-content-between">
+                <button class="tablinks active w-50" onclick="openPrice(event, 'gold')">قیمت طلا</button>
+                <button class="tablinks w-50" onclick="openPrice(event, 'coin')">قیمت سکه</button>
+              </div>
+              <div class="tabcontent" id="gold">
+                <div class="tab-header">
+                  <ul class="d-flex justify-content-between">
+                    <li><a href="">طلا</a></li>
+                    <li><a href="">قیمت</a></li>
+                    <li><a href="">تغییر</a></li>
+                    <li><a href="">نمودار</a></li>
+                  </ul>
+                </div>
+                <div class="tab-body ">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div> 
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabcontent" id="coin">
+                <div class="tab-header">
+                  <ul class="d-flex justify-content-between">
+                    <li><a href="">طلا</a></li>
+                    <li><a href="">قیمت</a></li>
+                    <li><a href="">تغییر</a></li>
+                    <li><a href="">نمودار</a></li>
+                  </ul>
+                </div>
+                <div class="tab-body ">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                  </ul>
+                </div> 
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                    <li class="">3</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="gold-price col-4 mt-4">
+              <div class="gold-price-title d-flex justify-content-between align-items-end">
+                <span><h1><a href=""><i class="fa-regular fa-money-bill-1"></i> نرخ ارز</a></h1></span>
+                <button>اطلاعات بیشتر</button>
+              </div>
+              <div class="tab d-flex justify-content-between">
+                <button class="tablink active w-50" onclick="openMoney(event, 'nima')">نرخ ارز نیمایی</button>
+                <button class="tablink w-50" onclick="openMoney(event, 'sana')">نرخ ارز سنا</button>
+              </div>
+              <div class="tabcontents" id="nima">
+                <div class="tab-header">
+                  <ul class="d-flex justify-content-between">
+                    <li><a href="">طلا</a></li>
+                    <li><a href="">قیمت</a></li>
+                    <li><a href="">تغییر</a></li>
+                    <li><a href="">نمودار</a></li>
+                  </ul>
+                </div>
+                <div class="tab-body ">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div> 
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                    <li class="">2</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tabcontents" id="sana">
+                <div class="tab-header">
+                  <ul class="d-flex justify-content-between">
+                    <li><a href="">طلا</a></li>
+                    <li><a href="">قیمت</a></li>
+                    <li><a href="">تغییر</a></li>
+                    <li><a href="">نمودار</a></li>
+                  </ul>
+                </div>
+                <div class="tab-body ">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                  </ul>
+                </div> 
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                  </ul>
+                </div>
+                <div class="tab-body">
+                  <ul class="d-flex justify-content-between">
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                    <li class="">9</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="converter col-4 d-flex flex-column">
+              <div class="converter-header d-flex justify-content-between">
+                <span><h1><a href=""><i class="fa fa-refresh"></i> مبدل ارز و طلا</a></h1></span>
+                <button>اطلاعات بیشتر</button>
+              </div>
+              <div>
+                <div class="convert-value w-100">
+                  <input type="text" name="" id="" placeholder="مقدار را وارد نمایید">
+                </div>
+                <div class="convert-from w-100">
+                  <select name="" id="">
+                    <option value="">واحد مبدا</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="convert-to">
+                  <select name="" id="">
+                    <option value="">واحد مقصد</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                </div>
+                <div class="convert-result">
+                  <span>نتیجه</span>
+                </div>
+                <div class="convert-calcuat bg-danger">
+                  <a href=""> محاسبه نتیجه<i class="fa-solid fa-angle-left"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="multi-news row mt-3">
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+                <div class="multi-news-title-header d-flex justify-content-between">
+                  <span><h3><a href=""><i class="fa fa-comment"></i> گفتگو</a></h3></span>
+                  <button>اطلاعات بیشتر</button>
+                </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/html-bzt-nrkh-dlr-mthrh-hmzmn-b-thdd-maan-ndrd-1739352379.jpg" alt="">
+                  <span><h2><a href="">مسکن در ایران ، پدیده اجتماعی یا کلاف سردرگم !</a></h2></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+                <div class="multi-news-title-header d-flex justify-content-between">
+                  <span><h3><a href=""><i class="fa fa-file-text"></i> یادداشت</a></h3></span>
+                  <button>اطلاعات بیشتر</button>
+                </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/1402090812463392728873414-1740132981.jpg" alt="">
+                  <span><h3><a href="">یادداشت اختصاصی |</a></h3></span>
+                  <span><h2><a href="">مسکن در ایران ، پدیده اجتماعی یا کلاف سردرگم !</a></h2></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+                <div class="multi-news-title-header d-flex justify-content-between">
+                  <span><h3><a href=""><i class="fa-solid fa-paper-plane"></i> توئیت</a></h3></span>
+                  <button>اطلاعات بیشتر</button>
+                </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/747293591085407.jpg" alt="">
+                  <span><h2><a href="">تاکید غریب آبادی بر پیگیری حقوقی اظهارات ترامپ</a></h2></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+                <div class="multi-news-title-header d-flex justify-content-between">
+                  <span><h3><a href=""><i class="fa fa-list"></i> اینستاگرام</a></h3></span>
+                  <button>اطلاعات بیشتر</button>
+                </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/652481397820843.jpg" alt="">
+                  <span><h3><a href="">معاون اجرایی رئیس جمهور اعلام کرد :</a></h3></span>
+                  <span><h2><a href="">مبارزه با فقر و گرانی فصل مشترک سران قوا</a></h2></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+               <div class="multi-news-title-header d-flex justify-content-between">
+                <span><h3><a href=""><i class="fa fa-download"></i> پرونده</a></h3></span>
+                <button>اطلاعات بیشتر</button>
+               </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/708338326464096.jpg" alt="">
+                  <span><h2><a href="">مدیریت منابع ارزی ، حلقه گمشده حکمرانی تحریم</a></h2></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="multi-news-title d-flex justify-content-between flex-column">
+               <div class="multi-news-title-header d-flex justify-content-between">
+                <span><h3><a href=""><i class="fa fa-file-text"></i> پژوهش</a></h3></span>
+                <button>اطلاعات بیشتر</button>
+               </div>
+                <div class="multi-news-box d-flex justify-content-center">
+                  <img src="images/431425643463929.jpg" alt="">
+                  <span><h2><a href="">بار «ترویج علم» به دوش اساتید است یا صداوسیما؟</a></h2></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advertise-place col-12 col-md-3 d-flex flex-column gap-2">
+          <div><img class="w-100" src="images/300-100-1736413532.gif" alt=""></div>
+          <div><img class="w-100" src="images/300x100-1684129903.gif" alt=""></div>
+          <div><img class="w-100" src="images/gh-h-1691219001.gif" alt=""></div>
+          <div><img class="w-100" src="images/300-100-version41-1736253106.gif" alt=""></div>
+          <div><img class="w-100" src="images/moj-300-100-op-1609754141.gif" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body> 
+</html>
+
+
+<!-- <div class="gold-price-list col">
+  <ul class="row">
+    <li class="col-6" id="gold-price"><a href="">قیمت طلا</a></li>
+    <li class="col-6" id="coin-price"><a href="">قیمت سکه</a></li>
+  </ul>
+  <div class="gold-price-tabs col">
+    <ul class="row">
+      <li class="tab-header col-3"><a href="">1</a>
+        <ul class="tab-body">
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+          <li>2</li>
+        </ul>
+      </li>
+      <li class="tab-header col-3"><a href="">1</a>
+        <ul class="tab-body">
+          <li>3</li>
+          <li>3</li>
+          <li>3</li>
+          <li>3</li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li class="tab-header col-3"><a href="">1</a>
+        <ul class="tab-body">
+          <li>4</li>
+          <li>4</li>
+          <li>4</li>
+          <li>4</li>
+          <li>4</li>
+        </ul>
+      </li>
+      <li class="tab-header col-3"><a href="">1</a>
+        <ul class="tab-body">
+          <li>5</li>
+          <li>5</li>
+          <li>5</li>
+          <li>5</li>
+          <li>5</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div> -->
