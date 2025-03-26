@@ -15,24 +15,83 @@ a{
     color: #000;
 }
 
+
 body{
     overflow-x: hidden;
     margin: 0;
+    background: #f2f2f2;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+.row{
+    --bs-gutter-x:1rem;
 }
 
 @font-face {
-    font-family: nassim-bold;
-    src: url(fonts/nassim-bold.woff);
+    font-family: "nassim-normal";
+    font-weight: normal;
+    src: url("./fonts/f/nassim-bold.eot") format("eot"), url("./fonts/f/nassim-normal.woff") format("woff"), url("./fonts/f/nassim-normal.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "nassim-bold";
+    font-weight: bold;
+    src: url("./fonts/f/nassim-bold.eot") format("eot"), url("./fonts/f/nassim-bold.woff") format("woff"), url("./fonts/f/nassim-bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "yekan-normal";
+    font-weight: normal;
+    src: url("./fonts/f/yekan-normal.eot") format("eot"), url("./fonts/f/yekan-normal.woff") format("woff"), url("./fonts/f/yekan-normal.eot") format("truetype");
 }
 
-@font-face {
-    font-family: nassim-normal;
-    src: url(fonts/nassim-normal.woff);
+@media(min-width:768px){
+    .container-md{
+        width: 736px !important;
+    }
 }
 
-@font-face {
-    font-family: yekan-normal;
-    src: url(fonts/yekan-normal.woff);
+@media(min-width:992px){
+    .container-md{
+        width: 956px !important;
+    }
+}
+
+@media(min-width:1200px){
+    .container-md{
+        width: 1156px !important;
+    }
+}
+
+@media(min-width:1300px){
+    .container-md{
+        width: 1246px !important;
+    }
+}
+
+@media(min-width:768px){
+    .container-lg{
+        width: 736px !important;
+    }
+}
+
+@media(min-width:992px){
+    .container-lg{
+        width: 956px !important;
+    }
+}
+
+@media(min-width:1200px){
+    .container-lg{
+        width: 1156px !important;
+    }
+}
+
+@media(min-width:1300px){
+    .container-lg{
+        width: 1246px !important;
+    }
 }
 
 .container, .container-fluid{
@@ -69,6 +128,10 @@ body{
     z-index: 999; 
 }
 
+.dropdown-toggle::after{
+    vertical-align: 0;
+}
+
 .dropdown i a{
     text-decoration: none;
 }
@@ -101,7 +164,7 @@ body{
 }
 
 .leftSide ul li i{
-    padding: 0.5rem 0.2rem;;
+    padding: 0 0.2rem;;
 }
 
 .searchBar{
@@ -113,6 +176,8 @@ body{
     height: 1.5rem;
     border: none;
     outline: none;
+    cursor: pointer;
+    font-family: nassim-normal;
 }
 
 .searchBar i{
@@ -131,7 +196,8 @@ body{
 }
 
 .navbarcontainer > div{
-    background-image: url('images/header-overlay.png') ;
+    background-image: url('images/header-overlay.png');
+    background-position: center;
 }
 
 .navbar{
@@ -141,7 +207,7 @@ body{
 }
 
 .navbar-toggler{
-    margin-right: 4rem;
+    margin-right: 0;
 }
 
 .navbar-nav .nav-link,
@@ -149,8 +215,17 @@ body{
     color: #ffffff;
 }
 
+.navbar-nav{
+    margin-right: 10px;
+}
+
 .nav-item{
     transition: all 0.3s ease;
+}
+
+.nav-link{
+    font-family: nassim-bold;
+    font-size: 18px;
 }
 
 .nav-item > a{
@@ -189,6 +264,9 @@ body{
     background-color: #313131;
     color: #fff;
     transition: all 0.3s ease;
+    font-family: nassim-normal;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .list-item > h6:hover{
@@ -221,6 +299,8 @@ body{
     cursor: pointer;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-family: nassim-normal;
+    font-size: 15px;
 }
 
 .list-item ul li a:hover {
@@ -281,7 +361,7 @@ body{
 }
 
 .tabs {
-    width: 100vw;
+   height: 36px;
     overflow: hidden;
 }
 
@@ -306,15 +386,16 @@ body{
     width: 100%;
     background: transparent;
     color: white;
-    border-left: 1px solid gray;
+    border-left: 1px solid #b7b7b7;
     margin: 0.5rem 0;
 }
 
 .tab-menu > ul > li > a {
     color: #000;
     text-decoration: none;
+    font-family: nassim-normal;
     padding: 0.8rem 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     transition: all 0.2s ease;
 }
 
@@ -359,8 +440,8 @@ body{
     padding: 0.3rem 1rem;
     border-left: 2px solid #444;
     margin: 0.1rem 0;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1rem;
+    font-family: nassim-normal;
 }
 
 .tab-menu-categories  > ul > li:hover{
@@ -392,7 +473,7 @@ body{
 }
 
 .slider-show{
-    --bs-gutter-x:0 !important;
+    /* --bs-gutter-x:0 !important; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -431,20 +512,47 @@ body{
 
 .swiper-slide > a:hover{
     color: #b01927;
-}    
+}
+
+.image-news-box{
+margin-top: 0.4rem;
+}
 
 .image-news{
     cursor: pointer;
     margin-bottom: 1rem;
+    overflow: hidden; 
+    border: 4px solid #fff;
 }
 
-.image-news > img{
-    border: 2px solid #fff;
+.image-news > div{
+    overflow: hidden;
+}
+
+.image-news  img{
     width: 100%;
-    margin-top: 0.4rem;
+    transition: transform 0.9s ease-in-out;
+    z-index: 1;
+} 
+
+.image-news::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 83px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+.first-news:hover img, .second-news:hover img{
+    transform: scale(1.02); /* بزرگ شدن نرم بدون تغییر جایگاه */
+    transform-origin: center;
 }
 
-.image-news > a{
+.image-news  a{
     right: 0.8rem;
     top: 0.8rem;
     border-radius: 0;
@@ -457,7 +565,7 @@ body{
     font-family: nassim-normal;
 }
 
-.image-news > h2{
+.image-news  h2{
     font-family: nassim-normal;
     position: absolute;
     bottom: 0;
@@ -466,48 +574,98 @@ body{
     padding: 20px;
     color: #fff;
     flex-wrap: nowrap;
+    z-index: 2;
 }
 
 .top-news h2{
     font-size: 16px;
     font-weight: bold;
+    font-family: nassim-bold;
     flex-wrap: wrap;
 }
 
 .first-news, .second-news{
+    padding: 15px;
     background: #fff;
     width: 49%;
     cursor: pointer;
+    overflow: hidden;
+    border: solid #b7b7b7b7;
+    border-width: 0 0 1px 1px;
 }
-.first-news > img, .second-news > img{
-    padding: 12px;
+
+.first-news-image, .second-news-image{
+    overflow: hidden;
+    max-width: 100px;
+}
+
+.first-news:hover, .second-news:hover{
+    color: red;
+}
+
+.first-news-image > img, .second-news-image > img{
+    position: relative;
+    width: 100px;
+    transition: transform 0.9s ease-in-out;
+}
+
+.first-news-image:hover img, .second-news-image:hover img{
+    transform: scale(1.02); /* بزرگ شدن نرم بدون تغییر جایگاه */
+    transform-origin: center;
 }
 
 .first-news > h2, .second-news > h2{
     font-family: nassim-normal;
 }
 
+.second-news-text, .first-news-text{
+    width: 60%;
+    margin-right: 8px;
+}
+
 .new-news{
     padding: 0.1rem 0.5rem;
+}
+
+.new-news:hover .new-news-title{
+    margin-right: 5px;
+}
+
+.new-news-title{
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
 .new-news-title > span{
     font-family: nassim-normal;
 }
+
+.new-news-title > span > a:hover{
+    color: #b71818;
+}
+
 .section-title > section > ul{
-    border: 1px solid #dfdfdd;
+    /* border: 1px solid #dfdfdd; */
     border-top: 2px solid;
     margin-top: 0.2rem;
     cursor: pointer;
-    padding: 0 0.3rem;
+    padding: 0 0.6rem;
+    background: #fff;
 }
 
 .section-title > section > ul > li{
-    padding: 0.24rem 12px;
+    padding: 0.2rem 12px;
     overflow: hidden;
     text-overflow: ellipsis;
     border-bottom: 1px solid #dfdfdd;
     transition: all 0.3s ease;
+}
+
+.section-title > section > ul > li:last-child{
+    border-bottom: none;
 }
 
 .section-title > section > ul > li:hover > a{
@@ -552,7 +710,80 @@ body{
     white-space: nowrap;
 }
 
-.trend-news{
+.site-ads span:hover{
+    color: #b71818;
+}
+
+.trend-news {
+    height: 193px;
+    margin-top: 0.5rem;
+}
+
+.trend-news > span > a {
+    color: #b01927;
+}
+
+.trend-news span {
+    transition: all 0.3s ease;
+}
+
+.trend-news:hover span {
+    margin-right: 5px;
+}
+
+.tags {
+    width: 100%;
+    margin-top: 0.3rem;
+    background-color: #fff;
+    text-align: justify;
+    padding: 0 22px;
+    border: solid #b7b7b7b7;
+    border-width: 3px 0 1px 1px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.tag-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+}
+
+.tag-list > li {
+    display: inline-block;
+    position: relative;
+    padding: 0 2px;
+    white-space: nowrap;
+    height: 20px;
+}
+
+.tag-list > li::after {
+    content: "|";
+    position: absolute;
+    left: -6px;
+    color: #444;
+}
+
+.tag-list > li:last-child::after {
+    content: "";
+}
+
+.tag-list > li > a {
+    font-family: nassim-normal;
+    font-size: 15px;
+    color: #254d6b;
+    text-decoration: none;
+}
+
+.tag-list > li > a:hover {
+    color: red;
+}
+
+
+/* .trend-news{
     height: 193px;
     margin-top: 0.5rem;
 }
@@ -561,15 +792,32 @@ body{
     color: #b01927;
 }
 
+.trend-news span{
+   transition: all 0.3s ease;
+}
+
+.trend-news:hover span{
+    margin-right: 5px;
+}
+
 .tag-list{
     width: auto;
     margin-top: 0.3rem;
     background-color: #fff;
     text-align: justify;
+    padding: 0 10px;
+    border: solid #b7b7b7b7;
+    border-width: 3px 0 1px 1px;
+}
+
+.tag-list > li > a:hover{
+    color:red;
 }
 
 .tag-list > li{
-    padding: 0 0.2rem;
+    display: inline-block;
+    border-left: 1px solid #444;
+    margin: 3px 0;
 }
 
 .tag-list > li > a{
@@ -577,17 +825,20 @@ body{
     padding: 0 0.1rem;
     font-size: 15px;
     color: #254d6b;
-    border-left: 1px solid #444;
-}
+} */
 
 /* تنظیمات عمومی برای ظرف آیتم */
 .item-container {
   padding-top: 12px; /* فضای کافی در بالا */
 }
 
+.slider-title > li{
+    width: 12.5%;
+}
+
 /* استایل خط بالا با عرض ثابت */
 .item-container .line {
-  width: 110px;            /* عرض ثابت برای خط */
+  width: 100%;            /* عرض ثابت برای خط */
   height: 6px;            /* ضخامت خط */
   background-color: #c5c5c5;
   margin-bottom: 5px;     /* فاصله بین خط و متن */
@@ -595,11 +846,15 @@ body{
 
 /* استایل متن */
 .item-container span {
-  font-family: nassim-normal;
+  font-family: nassim-bold;
   color: #777;
   font-size: 19px;
   cursor: pointer;
   text-align: center;
+}
+
+.parsian-bank{
+    --bs-gutter-x: 0;
 }
 
 .gold-price-title > span > h1{
@@ -608,13 +863,22 @@ body{
 
 .gold-price-title > span > h1 > a{
     font-size: 15px;
+    font-family: nassim-bold;
     color: #444;
 }
 
 .gold-price-title > button{
     width: 6rem;
     height: 20px;
+    font-family: nassim-normal;
     font-size: 11px;
+    background-color: #e8e8e8;
+    border: none;
+}
+
+.gold-price-title > button:hover{
+    color: #fff;
+    background-color: #555555;
 }
 
 .tab {
@@ -622,10 +886,13 @@ body{
     border: 1px solid #ccc;
     background-color: #f1f1f1;
     margin-top: 0.2rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -634,55 +901,124 @@ body{
     padding: 5px 0;
     transition: 0.3; 
     border-top: 3px solid #b01927;
-  }
+    font-family: nassim-normal;
+    font-size: 16px;
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+}
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
+.tab button:hover {
     background-color: #ddd;
   }
   
   /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
+.tab button.active {
+    color: #b71818;
+  background: #f2f2f2;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ff3131 !important;
+}
   
-  /* Style the tab content */
-  .tabcontent , .tabcontents {
+ /* Style the tab content */
+.tabcontent , .tabcontents {
     display: none;
     border: 1px solid #ccc;
+    border-right: none;
     border-top: none;
-  }
-  #gold , #nima {
-    display: block; /* این تب به صورت پیش‌فرض نمایش داده شود */
+    height: 216px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.gold-price-title span, .multi-news-title-header span h3{
+    transition: margin 0.3s ease-in-out;
+}
+  
+  /* وقتی روی .tabcontent هاور شد، عنوان حرکت کند */
+.gold-price:hover  .gold-price-title span {
+    margin-right: 5px; /* برای حرکت به راست */
+}
+
+.multi-news-title:hover .multi-news-title-header span h3{
+    margin-right: 5px;
+}
+
+#gold , #nima {
+    display: block; 
 }
 
 .tab-header{
-    background-color: #dfdfdf;
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.tab-header > ul > li > a{
+    font-family: nassim-normal;
+    color: #717171;
+    padding: 0 0.5rem;
+}
+
+.tab-body{
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+.tab-body:hover{
+    background-color: #fff0e5;
 }
 
 .tab-body > ul{
     border-bottom: 1px solid #ddd;
-    padding: 0.3rem 0;
+    padding: 0.46rem 0;
+}
+
+.tab-body > ul li:last-child{
+    border-bottom: none;
 }
 
 .tab-body > ul > li{
-    padding: 0.4rem 0.2rem;
+    font-size: 12px;
+    font-family: yekan-normal;
+    padding:0 0.5rem;
+    white-space: nowrap;
+    cursor: default;
+    cursor: pointer;
 }
 
-.converter{
-    margin-top: 3.3rem;
-    width: 336px;
+.converter-header > span{
+    transition: all 0.3s ease;
+}
+
+.converter:hover .converter-header > span{
+    margin-right: 5px;
+}
+
+.converter-header{
+    
+    border-bottom: 3px solid #b01927;
 }
 
 .converter-header > span > h1{
     font-size: 15px;
+    font-family: nassim-bold;
     color: #444;
+    margin-bottom: 0.3rem;
 }
 
 .converter-header > button{
     width: 6rem;
     height: 20px;
+    font-family: nassim-normal;
     font-size: 11px;
+    background-color: #e8e8e8;
+    border: none;
+}
+
+.converter-header > button:hover{
+    color:#fff;
+    background: #555555;
 }
 
 .convert-value > input, .convert-result, .convert-calcuat{
@@ -690,46 +1026,77 @@ body{
     border: none;
     text-align: center;
     font-size: 17px;
-     font-weight: bold;
-     width: 100%;
+    font-weight: bold;
+    width: 100%;
 }
 
 .convert-value > input{
-    border-top: 3px solid #b01927;
+    border: 1px solid #ccc;
+}
+
+.convert-value > input:focus{
+    outline: 1px solid #b01927;
 }
 
 .convert-from  select , .convert-to  select{
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     border-radius: 0;
     border: none;
     box-shadow: inset 0 0 6px #bbb;
     text-align: center;
+    font-family: nassim-bold;
 }
 
-.convert-result{
+.convert-result{ 
     background: #383838;
-    padding: 19px 10px;
+    padding: 10px;
     text-align: center;
     color: #fff;
+    font-family: yekan-normal;
 }
 
 .convert-calcuat{
+    background-color: #b71818;
     text-align: center;
-    padding: 19px 10px;
+    padding: 10px;
 }
 
 .convert-calcuat > a{
     color: #fff;
+    font-family: nassim-bold;
+}
+
+.convert-calcuat i{
+    margin-right: 10px;
+}
+
+.chart-icon{
+    padding: 3px 4px 3px 5px;
+    font-size: 16px;
+    display: block !important;
+    margin: 0 auto;
+    width: 27px;
+    color: #fff;
+    background: #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #d4d4d4;
+    box-shadow: inset 0 0 0 1px #d4d4d4;
+    color: #b71818;
+    transition: all 0.2s ease;
+}
+
+.chart-icon:hover{
+    background-color: #b71818;
+    color: #fff;
 }
 
 .advertise-place{
-    margin-top: 3.3rem;
+    margin-top: 4.7rem;
 }
 
-/* .multi-news{
-    background-color: #fff;
-} */
+.multi-news{
+    --bs-gutter-x:1rem;
+}
 
 .multi-news-title{
     margin-bottom: 0.7rem;
@@ -737,29 +1104,811 @@ body{
 
 .multi-news-title-header > span > h3{
     font-size: 15px;
+    font-family: nassim-bold;
 }
 
 .multi-news-title > div > button{
+    background-color: #e8e8e8;
     width: 6rem;
     height: 20px;
-    font-size: 11px
+    font-family: nassim-normal;
+    font-size: 11px;
+    border: none;
 }
 
-/* .multi-news-box{
+.multi-news-title > div > button:hover{
+    color: #fff;
+    background: #555555;
+}
+
+.multi-news-box{
     background-color: #fff;
-} */
-
-.multi-news-box > span > h2{
-    font-size: 12px;
+    padding: 0.77rem;
+    overflow: hidden;
 }
 
-.multi-news-box > span > h3{
+.multi-news-title-header{
+    margin-bottom: 0.2rem;
+}
+
+#conversation, #notebook, #tweet, #instagram,  #file, #research{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#conversation{
+    border-top: 3px solid #444;
+    transition: all 0.2s ease;
+}
+
+#conversation:hover{
+    color: #444;
+}
+
+#notebook{
+    border-top: 3px solid #6A5ACD;
+    transition: all 0.2s ease;
+}
+
+#notebook :hover a{
+    color: #6A5ACD;
+}
+
+#tweet{
+    border-top: 3px solid #00BFFF;
+    transition: all 0.2s ease;
+}
+
+#tweet :hover a{
+    color: #00BFFF;
+}
+
+#instagram{
+    border-top: 3px solid #DC143C;
+    transition: all 0.2s ease;
+}
+
+#instagram :hover a{
+    color: #DC143C;
+}
+
+#file{
+    border-top: 3px solid #BA55D3;
+    transition: all 0.2s ease;
+}
+
+#file :hover a{
+    color: #BA55D3;
+}
+
+#research{
+    border-top: 3px solid #228B22;
+    transition: all 0.2s ease;
+}
+
+#research :hover a{
+    color: #228b22;
+}
+
+.multi-news-box > div {
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    min-width: 0; /* جلوگیری از کشیده شدن عرض */
+}
+
+.news-image-box{
+    min-width: 100px !important;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+.news-image-box > img{
+    width: 100px;
+    transition: all 0.9s ease;
+    position: relative;
+}
+
+.multi-news-box:hover img{
+    transform: scale(1.02);
+    transform-origin: center;
+}
+
+.multi-news-box > div > div{
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.multi-news-box > div > h2{
+    font-size: 16px;
+    padding-right: 0.5rem;
+    white-space: wrap;
+    font-family: nassim-bold;
+}
+
+.multi-news-box > div > h3{
     font-size: 10px;
+    padding-right: 0.5rem;
+    white-space: wrap;
+    font-family: nassim-bold;
+}
+
+.multi-news-box > div > div > h2{
+    font-size: 16px;
+    padding-right: 0.5rem;
+    font-family: nassim-bold;
+}
+
+.multi-news-box > div > div > h3{
+    font-size: 14px;
+    padding-right: 0.5rem;
+    font-family: nassim-bold;
+    width: 100%;              /* عرض مشخص */
+    white-space: nowrap;      /* جلوگیری از رفتن به خط بعد */
+    overflow: hidden;         /* مخفی کردن متن اضافی */
+    text-overflow: ellipsis;  /* نمایش ... به‌جای متن اضافه */
+    display: block;
+}
+
+.multi-news-box > div > div > h3 > a{
+    color: #555;  
+    display: block; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.multi-news-title-header > span > h3 > a > i{
+    margin-left: 7px;
+}
+
+.hidden-price{
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.gold-coin-price{
+    --bs-gutter-x: 1rem;
+}
+
+.hidden-gold-price{
+    border-top: 3px solid #cc0000;
+}
+
+.hidden-gold-price-title{
+    font-family: nassim-normal;
+    background: #f2f2f2;
+    position: sticky;
+    top: 0;
+}
+
+.hidden-gold-price-title > ul > li{
+    cursor: pointer;
+    text-align: center;
+    padding: 8px 0;
+    background: #f8f8f8;
+    box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.36), inset 0 0 8px 1px rgba(165, 164, 164, 0.5);
+    width: 100%;
+}
+
+.hidden-gold-price-title ul li.active{
+    color: #b71818;
+    background: #f2f2f2;
+    box-shadow: none;
+    border-color: #ff3131 !important;
+}
+
+.hidden-gold-price-item{
+    border: 1px solid #dfdfdf;
+    border-top: none;
+}
+
+.hidden-gold-price-item > .row > li {
+    border-bottom: 1px solid #dfdfdf;
+    padding: 7px;
+    font-size: 13px;
+    font-family: nassim-normal;
+    background: #fff;
+}
+
+.hidden-gold-price-item > ul >li:first-child{
+    background: #f2f2f2;
+    color: #717171;
+    text-shadow: 0 1px 1px #fff;
+    font-size: 16px;
+    position: sticky;
+    top: 40px;
+}
+
+.news-row{
+    margin-top: 22px;
+}
+
+.news-data-title{
+    border-top: 3px solid var(--bullet-color, black);;
+    padding-top: 0.4rem;
+    cursor: pointer;
+}
+
+/* تغییر بولت به پلی فقط در دسته‌ی "ورزش اقتصادی" */
+.news-row[data-category="multimedia"] .content-title ul li::before {
+    content: "▶"; /* تغییر بولت به آیکون پلی */
+    color: #da9696; /* رنگ صورتی برای پلی */
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+/* مخصوص دسته "ورزش اقتصادی" -> تغییر رنگ border-bottom به صورتی */
+.news-row[data-category="multimedia"] .content-title ul li:hover {
+    border-bottom: 1px solid #da9696;
+  }
+
+.news-data-title-header{
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.news-data:hover .news-data-title-header{
+margin-right: 5px;
+}
+
+.news-data-title-header > h1{
+    font-size: 20px;
+    font-family: nassim-bold;
+}
+
+.news-data-title-header > h1 > i{
+    font-size: 15px;
+}
+
+.news-data-title-header{
+    color: var(--bullet-color, black);
+}
+
+.news-data-sub {
+    width: 76%;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 30px;
+  }
+
+.news-data-sub > li{
+    font-size: 17px;
+    font-family: nassim-normal;
+    padding-right: 12px;
+    white-space: nowrap;
+    display: block;
+}
+
+.news-data-sub > li a{
+    color: #333;
+    display: block;
+}
+
+.news-data-sub a:hover {
+    color: var(--bullet-color, black); /* تغییر رنگ لینک‌ها هنگام هاور */
+}
+
+.news-data-icon > span{
+    color: #666;
+    padding: 6px 15px 4px;
+    background: #e0e0e0;
+    margin-right: 4px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+.news-data-icon > span:hover{
+    background-color: #333333;
+}
+
+#rss:hover{
+    background: #ff9900;
+}
+
+.news-data-icon > span:hover .fa-cog{
+    color: #fff;
+}
+
+.news-data-icon > span:hover .fa-rss{
+    color: #fff;
+}
+
+.content-box{
+    --bs-gutter-x:0;
+}
+
+.content-box:hover .news-data-title-header{
+    margin-right: 5px;
+}
+
+.content-ads,.second-image-content-box{
+    padding-right: 1rem;
+
+}
+
+.image-content-box {
+    overflow: hidden; /* جلوگیری از خروج تصویر */
+    position: relative; /* برای والد تصویر */
+    padding-left: 1rem;
+    cursor: pointer;
+}
+
+.image-content-box > div{
+    background: #fff;
+    height: 100%;
+    border: 3px solid #fff;
+}
+
+.image-content-box > div > div > img {
+    transition: transform 0.9s ease-in-out;
+    will-change: transform;
+    margin: auto;
+ }
+
+.image-content-box > div > span > h1{
+    font-size: 23px;
+    font-family: nassim-bold;
+}
+
+.image-content-box h3{
+    font-size: 15px;
+    font-family: nassim-normal;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.image-content-box:hover span h1 {
+    color: var(--bullet-color, black);
+}
+
+.image-content-box:hover h3{
+    color: var(--bullet-color,black);
+}
+
+.image-content-box:hover div > img {
+    transform: scale(1.02); /* بزرگ شدن نرم بدون تغییر جایگاه */
+    transform-origin: center;
+}
+
+.second-image-content-box {
+    overflow: hidden; /* جلوگیری از خروج تصویر */
+    position: relative; /* برای والد تصویر */
+}
+
+.second-image-content-box > div{
+    background: #fff;
+    border: 3px solid #fff;
+    height: 100%;
+}
+
+.second-image-content-box > div > div > img {
+    transition: transform 0.9s ease-in-out;
+    will-change: transform;
+    margin: auto;
+ }
+
+.second-image-content-box > div > span > h1{
+    font-size: 23px;
+    font-family: nassim-bold;
+}
+
+.second-image-content-box h3{
+    font-size: 15px;
+    font-family: nassim-normal;
+    color: #555;
+    margin-top: 0.3rem;
+}
+
+.second-image-content-box:hover span h1 {
+    color: var(--bullet-color, black);
+}
+
+.second-image-content-box:hover div > img {
+    transform: scale(1.02); /* بزرگ شدن نرم بدون تغییر جایگاه */
+    transform-origin: center;
+}
+
+.content-list{
+    height: 300px;
+    padding-left: 1rem;
+}
+
+.image-content-list{
+    background: #fff;
+    height: 100px;
+    overflow: hidden;
+    line-height: 0.8;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    /* padding-left: 1.5rem; */
+}  
+
+.image-content-list:hover img{
+    transform: scale(1.02); 
+    transform-origin: center;
+}
+
+.image-content-list-box{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dfdfdd;
+    transition: transform 0.9s ease-in-out;
+    width: 100%;
+}
+
+.img-list{
+    overflow: hidden;
+    width: 100px;
+    min-height: 70px;
+}
+
+.list-box-text{
+    width: 60% ;
+    padding: 0 0.5rem;
+}
+
+.image-content-list:hover .list-box-text h3{
+    color: var(--bullet-color, black);
+}
+
+.image-content-list:hover .list-box-text span{
+    color: var(--bullet-color, black);
+}
+
+.image-content-list-box > div > span > h3{
+    font-size: 15px;
+    font-family: nassim-normal;
+    color: #555;
+}
+
+.image-content-list-box > div > span{
+    font-size: 16px;
+    font-family: nassim-bold;
+}
+
+
+.image-content-list img{
+    transition: all 0.9s ease-in-out;
+    position: relative;
+}
+
+.content-title{
+    height:100%;
+}
+
+.content-title > ul{
+    padding: 5px 12px;
+    background: #fff;
+    border: solid #dfdfdd;
+    border-width: 0 0 .1rem .1rem;
+    height:100%;
+    
+}  
+
+.content-title > ul > li{
+    position: relative;
+    list-style: none; 
+    padding: 4px 0 5px;
+    padding-right: 18px; 
+    display: block;
+    border-bottom: 1px solid #dfdfdd;
+    font-size: 15px;
+    color: #222;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    font-family: nassim-normal;
+}
+
+.content-title > ul > li:last-child{
+    border-bottom: none;
+}
+  
+ .content-title ul li::before {
+    content: "•"; /* افزودن بولت */
+    position: absolute;
+    right: 0;
+    top: -6px;
+    color: var(--bullet-color, black); /* دریافت رنگ از جاوااسکریپت */
+    font-size: 1.8rem; /* تنظیم اندازه بولت */
+    line-height: 1.5; /* هماهنگی با متن */
+  }
+
+/* اضافه کردن border-bottom به آیتم‌های لیست هنگام هاور */
+.content-title ul li:hover {
+    border-bottom: 1px solid var(--bullet-color, black);
+}
+
+.content-title > ul > li:last-child:hover{
+    border-bottom: none;
+}
+
+.content-ads{
+    height: 100%;
+}
+
+.content-ads > img{
+    height: 100%;
+}
+
+.news-row[data-category="cities"] .image-content-list{
+    background: #303030;
+}
+
+.news-row[data-category="cities"] .image-content-list-box{
+    border-bottom: none;
+}
+
+.news-row[data-category="cities"] .list-box-text span{
+    color: #fff;
+}
+
+.news-row[data-category="cities"] .image-content-list-box:hover .list-box-text span{
+    color: #FFAE31;
+}
+
+.news-row[data-category="needs"] .news-data-icon span{
+    background: #CC4129;
+    color: #fff;
+    font-size: 16px;
+    font-family: nassim-normal;
+}
+
+.news-row[data-category="needs"] .news-data-icon:hover span{
+    background: #000;
+}
+
+.needs-image{
+    margin-top: 0.5rem;
+}
+
+.needs-image-title{
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.needs-image-title::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 30%, rgba(0, 0, 0, 0) 100%);
+    pointer-events: none; /* برای اینکه کلیک روی تصویر بمونه */
+}
+
+.needs-image-title > img{
+    width: 100%;
+    transition: transform 0.9s ease-in-out; /* انیمیشن نرم */
+    transform-origin: center;
+}
+
+.needs-image-title:hover img{
+    transform: scale(1.02); /* بزرگ شدن نرم بدون تغییر جایگاه */
+    transform-origin: center;
+}
+
+.needs-image-title > h2{
+    position: absolute;
+    padding: 13px;
+    z-index: 2;
+    right: 3px;
+    left: 3px;
+    bottom: 3px;
+    font-size: 23px;
+    font-family: nassim-bold;
+    color: #fff;
+} 
+
+.more-image-content p{
+    position: absolute;
+    bottom: -10px;
+    left: 25px;
+    color: #b71818;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: nassim-bold;
+}
+
+.more-image-content p:hover{
+    color: #fff;
+}
+
+.footer{
+    color: #fff;
+    background-image: repeating-linear-gradient(to bottom right,rgb(17, 17, 17) 0%,rgb(41, 41, 41) 50%,rgb(153, 153, 153) 100%);
+}
+
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(19, 19, 19, 0.5);
+    padding: 0 8px;
+}
+
+.left-footer-header{
+    display: flex;
+    align-items: center;
+}
+
+.left-footer-header i{
+    padding: 5px 18px;
+  border-left: 1px solid #777;
+  color: white;
+  font-size: 20px;
+}
+
+.left-footer-header i:hover{
+    background-color:#5f5f5f;
+}
+
+.left-footer-header > select{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: nassim-bold;
+    font-size: 15px;
+    background-color: inherit;
+    color: #fff;
+    border: none !important;
+}
+
+.weather-temp{
+    display: flex;
+    align-items: center;
+}
+
+.weather-temp strong{
+    font-family: nassim-bold;
+}
+
+.right-footer{
+    display: flex;
+    align-items: center;
+}
+
+.right-footer-header > input{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-family: nassim-normal;
+    text-align: left;
+    width: 90%;
+    outline: none;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,.3);
+}
+
+.footer-body-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-body-icon > div{
+    height: 50px;
+    width: 50px;
+}
+
+.footer-body-icon > div > img{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.footer-body-icon > div > img:hover{
+    opacity: 1;
+}
+
+.footer-body-title > h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.footer-body-title > strong{
+    position: relative;
+    font-size: 60px;
+}
+
+.footer-body-title > strong::before{
+    content: "•";
+    position: absolute;
+    bottom: -12px;
+    right: -23px;
+}
+
+.footer-body-list{
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-body-list ul li{
+    display: block;
+    padding: 3px 4px 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #ddd;
+    font-size: 14px;
+    font-family: nassim-normal;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.footer-body-list ul li:hover{
+    background: #b71818;
+}
+
+.bottom-box{
+    background:#0F0F0F;
+    padding: 9px 0 2px;
+}
+
+.footer-bottom-logo img{
+    height: 36px;
+    margin-right: 10px;
+}
+
+.footer-bottom-text span{
+    white-space: wrap;
+    color: #999999;
+    font-size: 16px;
+    font-family: nassim-bold;
+}
+
+.right-footer-bottom  select{
+    direction: ltr;
+    font-size: 12px;
+    padding: 5px;
+    background: url('images/socialmedia/google-logo.png') no-repeat left center;
+    background-size: 30px;
+    padding-left: 30px;
+    background-color: #fff;
+    border: none;
+}
+
+@media(max-width:1200px){
+    .news-data-sub{
+        width: 72%;
+      }
+}
+
+@media(min-width:992px){
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block;
+        --bs-dropdown-spacer: 0;
+      }
+
+    .converter{
+        margin-top: 3.3rem;
+    }
+
 }
 
 @media(max-width:992px){
     .container{
-        margin-right: 0;
+        margin-right: auto;
     }
 
     .collapse:not(.show){
@@ -825,6 +1974,10 @@ body{
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     }
 
+    .navbar-toggler{
+        margin-right: 8rem;
+    }
+
     .navbar-toggler:focus {
         box-shadow: none; 
     }
@@ -844,22 +1997,52 @@ body{
       .parsian-bank{
         margin-right: auto;
       }
-}
-
-@media(min-width:992px){
-    .navbar .dropdown:hover .dropdown-menu {
-        display: block;
-        --bs-dropdown-spacer: 0;
+      .tabcontent , .tabcontents{
+        height: 194px;
       }
+
+      .converter{
+        margin-top: 2.9rem;
+    }
+
+    .convert-from  select , .convert-to  select{
+        padding: 12px 0;
+    }
+    
+    .convert-result, .convert-calcuat{
+        padding: 7.5px;
+    }
+
+    .advertise-place {
+        margin-top: 0.7rem;
+      }
+
+      .news-data-sub{
+        width: 63%;
+      }
+
+      .content-box{
+        height: auto !important;
+      }
+
 }
 
 @media(max-width:768px){
+
+    section{
+        padding: 0 8px;
+    }
+
     .leftSide{
         width: 50%;
     }
 
     .image-news > img{
         width: 100%;
+    }
+
+    .navbar-toggler{
+        margin-right: 2rem;
     }
 
     .first-news, .second-news{
@@ -901,8 +2084,111 @@ body{
         height: auto;
     }
 
+    .convert-from , .convert-to{
+        width: 46%;
+        box-shadow: inset 0 0 6px #bbb !important;
+    }
+
+    .row{
+        --bs-gutter-x:0;
+    }
+
+    .gold-price-title{
+        margin-bottom: 7px;
+    }
+
+    .news-data-sub{
+        overflow: scroll;
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        margin-top: 4px;
+        background: #ddd;
+        flex-wrap: nowrap;
+        height: 30px !important;
+        scrollbar-width: none;
+    }
+
+    .news-data-sub > li{
+        padding: 5px 15px;
+    }
+
+    .news-data-title{
+        height: auto;
+    }
+
+    .multi-news-box > div{
+        margin-right: 0;
+    }
+
+    .content-box{
+        height: auto !important;
+    }
+
+    .content-ads, .second-image-content-box{
+    padding-right: 0;
+    }
+
+    .image-content-box{
+        padding-left: 0;
+    }
+
+    .content-title > ul{
+        border: none;
+    }
+
+    .footer-body-list{
+        gap: 0;
+    }
+
+    .needs-image-title > h2{
+        font-size: 15px;
+    }
+
+    .right-footer-header > input{
+        text-align: center;
+    }
+
+    .right-footer-header i{
+        display: none;
+    }
+
 }
 
 @media (max-width: 576px) {
-    
+
+    .nav-logo > img{
+        width: 65%;
+        margin: 10px 5px 10px 0;
+    }
+
+    .kh{
+        width: 120px;
+        top: 0.5rem;
+        left: 0;
+    }
+
+    .image-news > h2{
+        font-size: 16px;
+    }
+
+    .swiper-slide a{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .parsian-bank{
+        padding: 0 8px;
+    }
+
+    .navbar-toggler{
+        margin-right: 8px;
+    }
+
+    .gold-price-title{
+        margin-bottom: 7px;
+    }
+
+
   }  
