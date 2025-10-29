@@ -8,9 +8,8 @@ function scrollWin(x, y) {
     direction: 'vertical',  // حرکت عمودی
     loop: true,             // تکرار بی‌نهایت اسلایدها
     autoplay: {
-      delay: 5000,          // هر 5 ثانیه تغییر اسلاید
+      delay: 3000,          // هر 5 ثانیه تغییر اسلاید
     },
-    height : '24' ,
     speed: 600,             // سرعت انیمیشن (600 میلی‌ثانیه)
     mousewheel: false       // غیرفعال کردن تغییر اسلاید با چرخ ماوس (اختیاری)
   });
@@ -31,7 +30,7 @@ function scrollWin(x, y) {
   const lines = document.querySelectorAll(".lable ul li");
   
   const categoryColors = {
-    eghtesad: "#ff660",     // توجه: اگر نیاز به 6 رقمی دارید، به "#ff6600" تغییر دهید.
+    eghtesad: "#B22222",    
     siasat: "#0033cc",
     farhang: "#0040ad",
     fanavari: "#7b68ee",
@@ -120,7 +119,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // نمونه کاروسل بوت‌استرپ + تنظیم تایمر ۱۰ ثانیه‌ای
-  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval: 10000 });
+  const carouselInstance = new bootstrap.Carousel(carouselElement, {
+    interval: 10000,
+    // ride: 'carousel'
+  });
+  
 
   const lines = document.querySelectorAll(".lable ul li");
 
